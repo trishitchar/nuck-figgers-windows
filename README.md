@@ -1,6 +1,6 @@
 ## Why This Repo?
 
-Let’s be real: I’d rather not be stuck with Windows, but here we are! Tried my hand at Ubuntu and Kali, but ```everything comes with a price```. I enjoy a little *fafo* now and then, but sometimes that costs me precious time. So for now, Windows it is! 
+Let’s be real: I’d rather not be stuck with Windows, but here we are! Tried my hand at Ubuntu and Kali, but ```everything comes with a cost```. I enjoy a little *fafo* now and then, but sometimes that costs me precious time. So for now, Windows it is! 
 
 This repo is my backup plan for when Windows inevitably decides to throw a tantrum. Here’s a collection of my must-have software/tools, so I won’t have to scramble or rely on my memory in the future.
 
@@ -33,12 +33,9 @@ Ready to get your system set up? Here are some handy commands:
    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 2. **Install JDK and Node.js:**
     ```bash
-    Copy code
     choco install -y nodejs-lts microsoft-openjdk17
 3. **Update npm**
     ```javascript
     npm install -g npm
 
 ## in future I'd like to make it automatatic
-
-
