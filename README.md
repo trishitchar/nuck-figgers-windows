@@ -22,6 +22,7 @@ Here's my lineup of lifesavers:
 11. WinRAR
 12. Avast Antivirus
 13. postman
+14. PC MANAGER
 
 
 ## Commands
