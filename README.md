@@ -39,8 +39,7 @@ Ready to get your system set up? Here are some handy commands:
 3. **Update npm**
     ```javascript
     npm install -g npm
-4.
-   ```bash
-  choco install ffmpeg
+4. ```bash
+     choco install ffmpeg
 
 ## in future I'd like to make it automatatic
