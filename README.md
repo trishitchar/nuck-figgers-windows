@@ -26,10 +26,51 @@ Here's my lineup of lifesavers:
 15. Tyrrrz
 
 
-## Commands
+## Commands set1
+```powershell
+Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+```
+or
+```powershell
+Invoke-WebRequest -Uri "https://aka.ms/getwinget" -OutFile "AppInstaller.msixbundle"
+Add-AppxPackage "AppInstaller.msixbundle"
+```
+close 
+```powershell
+$env:PATH += ";$env:LOCALAPPDATA\Microsoft\WindowsApps"
+```
+```powershell
+winget --version
+```
+```powershell
+winget install --id OpenJS.NodeJS.LTS --exact
+winget install --id Microsoft.OpenJDK.17 --exact
+winget install --id Git.Git --exact
+winget install --id Gyan.FFmpeg --exact
+winget install --id Python.Python.3.12 --exact
+winget install --id Microsoft.VisualStudioCode --exact
+```
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+close
+```powershell
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+```
+```powershell
+node -v
+npm -v
+java --version
+git --version
+ffmpeg -version
+python --version
+```
+```powershell
+npm install -g npm@latest
+```
 
-Ready to get your system set up? Here are some handy commands:
 
+## Commands set2
 1. **Install Chocolatey** (the package manager we all need):
    ```powershell
    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
